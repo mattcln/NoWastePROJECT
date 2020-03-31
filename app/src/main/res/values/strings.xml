@@ -1,3 +1,9 @@
 <resources>
+    /*PAGE ACCUEIL*/
     <string name="app_name">NoWastePING</string>
+    <string name="titre_accueil">NoWaste</string>
+    <string name="btnInscription">S\'inscrire</string>
+    <string name="btnConnect">Se connecter</string>
+    <string name="lblMdp">Mot de passe :</string>
+    <string name="lblMail">Mail :</string>
 </resources>
