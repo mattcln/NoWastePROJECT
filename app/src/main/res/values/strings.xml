@@ -6,4 +6,5 @@
     <string name="btnConnect">Se connecter</string>
     <string name="lblMdp">Mot de passe :</string>
     <string name="lblMail">Mail :</string>
+    <string name="txtWrong"><![CDATA[Mauvaise combinaison mail & mot de passe]]></string>
 </resources>

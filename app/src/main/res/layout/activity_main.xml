@@ -8,19 +8,6 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/lblTitre"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:text="@string/titre_accueil"
-        android:textColor="#8BC34A"
-        android:textSize="50sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
         android:id="@+id/lblMail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -29,7 +16,7 @@
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/txtMail"
-        app:layout_constraintTop_toBottomOf="@+id/imgZucc" />
+        app:layout_constraintTop_toBottomOf="@+id/txtWrongmdp" />
 
     <TextView
         android:id="@+id/lblMdp"
@@ -52,7 +39,7 @@
         android:ems="10"
         android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgZucc" />
+        app:layout_constraintTop_toBottomOf="@+id/txtWrongmdp" />
 
     <EditText
         android:id="@+id/txtMdp"
@@ -70,7 +57,7 @@
         android:id="@+id/btnConnect"
         android:layout_width="150sp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
         android:background="#8BC34A"
         android:text="@string/btnConnect"
         app:layout_constraintEnd_toEndOf="parent"
@@ -89,13 +76,27 @@
         app:layout_constraintTop_toBottomOf="@+id/btnConnect" />
 
     <ImageView
-        android:id="@+id/imgZucc"
-        android:layout_width="86dp"
-        android:layout_height="240dp"
+        android:id="@+id/imgNoWaste"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="32dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lblTitre"
-        app:srcCompat="@drawable/zucc" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sansfond" />
+
+    <TextView
+        android:id="@+id/txtWrongmdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/txtWrong"
+        android:textColor="#FF3D00"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgNoWaste"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
