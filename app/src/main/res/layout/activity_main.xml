@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/holo_blue_dark"
+    android:background="@android:color/white"
     tools:context=".MainActivity">
 
     <TextView
@@ -58,7 +58,7 @@
         android:layout_width="150sp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:background="#8BC34A"
+        android:background="#4D9C50"
         android:text="@string/btnConnect"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -69,21 +69,17 @@
         android:layout_width="150sp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:background="#8BC34A"
+        android:background="#4D9C50"
         android:text="@string/btnInscription"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnConnect" />
 
     <ImageView
-        android:id="@+id/imgNoWaste"
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:layout_marginTop="32dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+
         app:srcCompat="@drawable/sansfond" />
+
+
 
     <TextView
         android:id="@+id/txtWrongmdp"
@@ -97,6 +93,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imgNoWaste"/>
+
+    <ImageView
+        android:id="@+id/imgNoWaste"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/nowastelogo"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
