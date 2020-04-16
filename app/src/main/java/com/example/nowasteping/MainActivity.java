@@ -36,9 +36,9 @@ public class MainActivity extends AppCompatActivity {
         imgNoWaste = findViewById(R.id.imgNoWaste);
         txtWrongmdp = findViewById(R.id.txtWrongmdp);
         txtWrongmdp.setVisibility(View.INVISIBLE);
-
         btnConnect.setOnClickListener(btnSeConnecterListener);
         init();
+
     }
 
     private void init() {
@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
             String textMdp = txtMdp.getText().toString();
             Log.i("DEBUG",textMail + " " + textMdp);
 
-            if(textMail.equals("nowaste@gmail.com") && textMdp.equals("1234")){
+            if(LoginCorrect(textMail, textMdp)){
                 Log.i("DEBUG","Authentification successfull");
             } else {
                 Log.i("DEBUG","Authentification failed");
@@ -64,4 +64,10 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     };
+
+    public boolean LoginCorrect (String textMail, String textMdp){
+        if(textMail.equals("nowaste@gmail.com") && textMdp.equals("1234")){
+            return true;
+        } else return false;
+    }
 }
