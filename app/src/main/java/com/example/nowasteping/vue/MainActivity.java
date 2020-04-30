@@ -1,4 +1,4 @@
-package com.example.nowasteping;
+package com.example.nowasteping.vue;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -10,6 +10,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.example.nowasteping.R;
 
 public class MainActivity extends AppCompatActivity {
 

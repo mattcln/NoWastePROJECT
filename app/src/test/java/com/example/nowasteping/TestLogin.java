@@ -1,5 +1,7 @@
 package com.example.nowasteping;
 
+import com.example.nowasteping.vue.MainActivity;
+
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
