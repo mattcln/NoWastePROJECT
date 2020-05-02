@@ -1,23 +1,23 @@
 package com.example.nowasteping.modele;
 
 public class Produit {
-    private String nom;
-    private Integer quant;
+    String nom;
+    int nb;
 
     public Produit(String nom) {
         this.nom = nom;
-        this.quant = 0;
+        this.nb = 1;
     }
 
     public String getNom() {
         return nom;
     }
 
-    public int getQuant() {
-        return quant;
+    public int getNb() {
+        return nb;
     }
 
-    public void augmenterQuant(){
-        quant++;
-    } 
+    public void ajoutProduit(){
+        nb++;
+    }
 }

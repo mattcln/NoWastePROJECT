@@ -5,7 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/white"
+<<<<<<< Updated upstream
     tools:context=".vue.MainActivity">
+=======
+    tools:context=".controleur.MainActivity">
+>>>>>>> Stashed changes
 
     <TextView
         android:id="@+id/lblMail"

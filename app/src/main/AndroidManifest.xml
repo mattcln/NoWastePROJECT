@@ -9,7 +9,14 @@
         android:roundIcon="@drawable/nowasteicone"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+<<<<<<< Updated upstream
         <activity android:name=".vue.MainActivity">
+=======
+        <activity android:name=".controleur.Assos"></activity>
+        <activity android:name=".controleur.Accueil" />
+        <activity android:name=".controleur.MonPanier" />
+        <activity android:name=".controleur.MainActivity">
+>>>>>>> Stashed changes
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

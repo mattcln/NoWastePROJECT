@@ -1,8 +1,4 @@
-<<<<<<< Updated upstream:app/src/main/java/com/example/nowasteping/vue/MainActivity.java
-package com.example.nowasteping.vue;
-=======
 package com.example.nowasteping.controleur;
->>>>>>> Stashed changes:app/src/main/java/com/example/nowasteping/controleur/MainActivity.java
 
 import androidx.appcompat.app.AppCompatActivity;
 
