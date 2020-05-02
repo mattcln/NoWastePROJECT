@@ -1,17 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <androidx.constraintlayout.widget.ConstraintLayout
-<<<<<<< Updated upstream
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="match_parent">
-
-=======
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <TextView
+    <Textview
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -32,11 +24,13 @@
         android:layout_marginTop="100dp"
         android:layout_marginEnd="100dp"
         android:layout_marginRight="100dp"
+        android:layout_marginLeft="40dp"
         android:textSize="24sp"
         android:textStyle="bold"
         android:textColor="#696969"
-        android:text="Quantité"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
->>>>>>> Stashed changes
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:text="Quantité" />-->
+
+    <ListView
+        android:id="@+id/panier_listview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>

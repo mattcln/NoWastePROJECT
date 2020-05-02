@@ -47,6 +47,7 @@ public class Panier_Item_Adapter extends BaseAdapter {
         // Récupérer les informations de nos produits
         Produit currentProduit = getItem(i);
         String produitNom = currentProduit.getNom();
+
         int produitQuant = currentProduit.getNb();
 
         // Les insérer dans le listview
