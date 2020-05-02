@@ -7,8 +7,8 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
-import com.example.nowasteping.R;
 import com.example.nowasteping.modele.Produit;
+import com.example.nowasteping.R;
 
 import java.util.List;
 
@@ -47,14 +47,15 @@ public class Panier_Item_Adapter extends BaseAdapter {
         // Récupérer les informations de nos produits
         Produit currentProduit = getItem(i);
         String produitNom = currentProduit.getNom();
-        int produitQuant = currentProduit.getQuant();
+
+        int produitQuant = currentProduit.getNb();
 
         // Les insérer dans le listview
         TextView itemNameView = view.findViewById(R.id.item_name);
         itemNameView.setText(produitNom);
 
         TextView itemQuantView = view.findViewById(R.id.item_quant);
-        itemQuantView.setText(produitQuant);
+        itemQuantView.setText(produitQuant + "");
 
         return view;
     }

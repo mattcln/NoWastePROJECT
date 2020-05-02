@@ -1,4 +1,4 @@
-package com.example.nowasteping.vue;
+package com.example.nowasteping;
 
 public class Accueil {
 }

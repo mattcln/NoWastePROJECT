@@ -7,7 +7,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="20dp"
-        android:textColor="@dimen/color_grey"
+        android:textColor="@color/color_grey"
         android:layout_marginRight="50dp"
         android:text="@string/item_default_name"/>
 
@@ -16,7 +16,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="20dp"
-        android:textColor="@dimen/color_grey"
+        android:textColor="@color/color_grey"
         android:text="@string/item_default_quant"/>
 
 

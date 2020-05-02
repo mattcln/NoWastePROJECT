@@ -1,5 +1,11 @@
 package com.example.nowasteping;
 
+<<<<<<< Updated upstream
+import com.example.nowasteping.vue.MainActivity;
+=======
+import com.example.nowasteping.controleur.MainActivity;
+>>>>>>> Stashed changes
+
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;

@@ -1,8 +1,9 @@
-package com.example.nowasteping;
+package com.example.nowasteping.controleur;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -10,6 +11,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.example.nowasteping.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -58,6 +61,9 @@ public class MainActivity extends AppCompatActivity {
 
             if(LoginCorrect(textMail, textMdp)){
                 Log.i("DEBUG","Authentification successfull");
+                Intent otherActivity = new Intent(getApplicationContext(), Accueil.class);
+                startActivity(otherActivity);
+                finish();
             } else {
                 Log.i("DEBUG","Authentification failed");
                 txtWrongmdp.setVisibility(View.VISIBLE);
@@ -66,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
     };
 
     public boolean LoginCorrect (String textMail, String textMdp){
-        if(textMail.equals("nowaste@gmail.com") && textMdp.equals("1234")){
+        if(textMail.equals("a") && textMdp.equals("1")){
             return true;
         } else return false;
     }

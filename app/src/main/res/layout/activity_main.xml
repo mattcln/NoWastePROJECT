@@ -5,7 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/white"
-    tools:context=".MainActivity">
+<<<<<<< Updated upstream
+    tools:context=".vue.MainActivity">
+=======
+    tools:context=".controleur.MainActivity">
+>>>>>>> Stashed changes
 
     <TextView
         android:id="@+id/lblMail"
@@ -58,8 +62,10 @@
         android:layout_width="150sp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:background="#4D9C50"
         android:text="@string/btnConnect"
+        android:background="#3CB371"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtMdp" />
@@ -69,7 +75,9 @@
         android:layout_width="150sp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:background="#4D9C50"
+        android:background="#3CB371"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
         android:text="@string/btnInscription"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
