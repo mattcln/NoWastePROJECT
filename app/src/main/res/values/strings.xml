@@ -9,4 +9,5 @@
     <string name="txtWrong"><![CDATA[Mauvaise combinaison mail & mot de passe]]></string>
     <string name="item_default_name">Nom de l\'article</string>
     <string name="item_default_quant">0</string>
+    <string name="btnRetour">Retour</string>
 </resources>

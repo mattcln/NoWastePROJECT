@@ -5,8 +5,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.nowasteping.controleur.MonPanier;
 import com.example.nowasteping.modele.Produit;
 import com.example.nowasteping.R;
 
@@ -17,6 +19,7 @@ public class Panier_Item_Adapter extends BaseAdapter {
     //fields
     private Context context;
     private List<Produit> produitlist;
+    MonPanier panier = new MonPanier();
     LayoutInflater inflater;
 
     public Panier_Item_Adapter(Context context, List<Produit> produitlist) {
@@ -45,18 +48,25 @@ public class Panier_Item_Adapter extends BaseAdapter {
         view = inflater.inflate(R.layout.panier_listview_item, null);
 
         // Récupérer les informations de nos produits
-        Produit currentProduit = getItem(i);
-        String produitNom = currentProduit.getNom();
+        final Produit currentProduit = getItem(i);
+        final String produitNom = currentProduit.getNom();
+        ImageView imgDel = view.findViewById(R.id.imgDelete);
 
         int produitQuant = currentProduit.getNb();
 
         // Les insérer dans le listview
-        TextView itemNameView = view.findViewById(R.id.item_name);
+        final TextView itemNameView = view.findViewById(R.id.item_name);
         itemNameView.setText(produitNom);
 
         TextView itemQuantView = view.findViewById(R.id.item_quant);
         itemQuantView.setText(produitQuant + "");
 
+        imgDel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                panier.supprimerProduit(produitNom);
+            }
+        });
         return view;
     }
 }
